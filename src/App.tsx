@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { BrowserRouter, Navigate, Route } from 'react-router-dom';
-import './App.css'
+import './App.css';
 import { Logout } from './components/Logout';
 import { AuthGuard, RolGuard } from './guards';
 import { PrivateRoutes, PublicRoutes, Roles } from './models';
@@ -11,7 +11,7 @@ const Login = lazy(() => import('./pages/Login/Login'));
 const Private = lazy(() => import('./pages/Private/Private'));
 
 function App() {
-  	return (
+	return (
 		<>
 			<BrowserRouter>
 				<Logout />

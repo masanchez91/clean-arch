@@ -1,5 +1,5 @@
-import { modifyUser } from "@/redux/slices/user.slice";
-import { useDispatch } from "react-redux";
+import { modifyUser } from '@/redux/slices/user.slice';
+import { useDispatch } from 'react-redux';
 
 export default function ModifyHomeButton() {
 	const dispatch  = useDispatch();
@@ -10,5 +10,5 @@ export default function ModifyHomeButton() {
 		}, 2000);
 	};
 
-	return <button onClick={dispatchAction}>Dispatched modify action</button>
-};
+	return <button onClick={dispatchAction}>Dispatched modify action</button>;
+}

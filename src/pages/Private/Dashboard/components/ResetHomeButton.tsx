@@ -1,5 +1,5 @@
-import { resetUser } from "@/redux/slices/user.slice";
-import { useDispatch } from "react-redux";
+import { resetUser } from '@/redux/slices/user.slice';
+import { useDispatch } from 'react-redux';
 
 export default function ResetHomeButton() {
 	const dispatch  = useDispatch();
@@ -10,5 +10,5 @@ export default function ResetHomeButton() {
 		}, 2000);
 	};
 
-	return <button onClick={dispatchAction}>Dispatched reset action</button>
-};
+	return <button onClick={dispatchAction}>Dispatched reset action</button>;
+}

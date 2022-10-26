@@ -1,9 +1,9 @@
-import { Roles } from "./roles.type";
+import { Roles } from './roles.type';
 
 interface UserAssociatedUrl {
     name: string;
     url: string;
-};
+}
   
 export interface ApiUser {
     id: number;
@@ -18,7 +18,7 @@ export interface ApiUser {
     episode: string[];
     url: string;
     created: string;
-};
+}
   
 export interface User {
     id: number;
@@ -26,12 +26,12 @@ export interface User {
     status: string;
     species: string;
     rol: Roles;
-};
+}
   
 export const UserEmptyState: User = {
-    id: 0,
-    name: '',
-    status: '',
-    species: '',
-    rol: Roles.USER
+	id: 0,
+	name: '',
+	status: '',
+	species: '',
+	rol: Roles.USER
 };

@@ -7,7 +7,7 @@ export interface AppStore {
 }
 
 export default configureStore<AppStore>({
-  reducer: {
-    user: userReducer
-  }
+	reducer: {
+		user: userReducer
+	}
 });
